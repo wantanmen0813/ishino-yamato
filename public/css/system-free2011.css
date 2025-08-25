@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/* 
+ * ***********************************************************
+ *
+ * Since:     2011-10
+ * Modified:  2011-10
+ * Guideline: Ver.2.0
+ *
+ * ***********************************************************
+ */
+
+/*　システムフリー　*/
+
+.system-free,
+.system-free p,
+.system-free h1,
+.system-free h2,
+.system-free h3,
+.system-free h4,
+.system-free h5,
+.system-free h6,
+.system-free li,
+.system-free pre,
+.system-free address,
+.system-free div,
+.system-free blockquote
+{
+	font-size:100%;
+	line-height: 1.5;
+	margin: 0px;
+	padding: 0px;
+	word-wrap:break-word;
+}
+.system-free th,
+.system-free td
+{
+	line-height: 1.5;
+	/*  cellpadding="5" cellspacing="1"　で指定のため、margin,padding指定不可 */
+}
+
+.system-free table{
+	/* 	border-collapse:separate; */
+	margin:0;
+}
+.system-free table tr{
+	border-bottom:none;
+}
+.system-free table th{
+	font-weight:bold;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:middle;
+}
+.system-free table td{
+	text-align:left;
+}
+.system-free table td[colspan="2"]{
+	border-left:1px solid #cccccc;
+}
+
+.system-free ul{
+	margin: 0px 0px 0px 15px;
+	padding: 0px 0px 0px 15px;
+	list-style: disc;
+}
+.system-free ol
+{
+	margin: 0px 0px 0px 15px;
+	padding: 0px 0px 0px 15px;
+	list-style: decimal;
+}
+.system-free ul li,
+.system-free ol li
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.system-free a img{
+	border:2px;
+}
+
+
+/* system-free#clearfix */
+.system-free:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.system-free {
+  min-height: 1px;
+  padding:0px 25px;
+}
+* html .system-free {
+  height: 1px;
+}
+
+#contents .system-free p{
+	margin:0;
+}

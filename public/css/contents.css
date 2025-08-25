@@ -1,0 +1,1814 @@
+@charset "utf-8";
+/* このファイルはUTF-8のBOMなし(UTF-8N)で保存しています */
+
+/**
+ * CSS Information
+ * ===============================================================
+ *
+ * Site URL:  http://
+ * File name: contents.css
+ * Summary:   ページ・コンテンツごとの固有スタイル
+ * Author:    CrEa., Inc.
+ *
+ * -----------------------------------
+ *
+ * TOC:
+ *     =1    home         ホーム
+ *     =2    cemetery     墓地・霊園
+ *     =3    gravestone   墓石の種類
+ *     =4    flow         お墓を建てるまで
+ *     =5    maintenance  墓石メンテナンス
+ *     =6    move         改葬（お墓の引越）
+ *     =7    company      会社案内
+ *     =8    jyuryo       ご生前建墓「寿陵」
+ *     =9    loan         お取り扱いローン
+ *     =10   free-check   無料点検
+ *     =11   construction 施工例
+ *     =12   news         新着情報
+ *     =13   blog         ブログ
+ *     =14   contact      お問い合わせ
+ *     =15   privacy      プライバシーポリシー
+ *
+ * ===============================================================
+*/
+
+
+
+/** =1
+ * ========================================
+ * home - ホーム
+ * ========================================
+ */
+
+#home {
+}
+
+#home h2 {
+	height: 470px;
+	padding: 0;
+}
+
+#home h2 img:first-child {
+	margin-bottom: 6px;
+}
+
+#home h2 .carousel-navigation ul li:first-child {
+	margin-right: 20px;
+}
+
+#home h2 .carousel-navigation ul li:last-child {
+	padding-top: 13px;
+}
+
+#home .appeal-point-list {
+	/* box-shadow */
+	box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-moz-box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-webkit-box-shadow: 0px 0px 6px 3px #e3e3e3;
+
+	/* border-radius */
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+
+	padding: 0 20px;
+}
+
+#home .appeal-point-list li {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border-bottom: solid 1px #cccccc;
+	font-weight: bold;
+}
+#home .appeal-point-list li:last-child {
+	border-bottom: none;
+}
+
+#home .recommend-cemetery-list {
+	margin-bottom: 40px;
+}
+
+#home .recommend-cemetery-list li {
+	float: left;
+	width: 45%;
+	margin-bottom:40px;
+}
+
+#home .recommend-cemetery-list li:nth-child(2n-1) {
+	margin-right: 40px;
+}
+#home .recommend-cemetery-list li:first-child {
+	float: none;
+	width: 100%;
+	margin-right: 0px;
+}
+#home .recommend-cemetery-list li:first-child img{
+	display: block;
+	margin: 0 auto 0.5em;
+}
+
+
+#home .recommend-cemetery-list li p strong {
+	color: #003300;
+}
+
+#home .cemetery-use-price {
+	background-color: #66b92f;
+	color: #ffffff;
+	padding: 2px 10px;
+	/* border-radius */
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+#home .recommend-guide-box {
+	background-color: #f5f5f5;
+	padding: 20px;
+}
+
+#home .search-cemetery-button {
+	display: block;
+	margin: 0 auto;
+}
+
+#home .appeal-point-head {
+	font-weight: bold;
+	color: #003300;
+}
+
+#home .appeal-point-text {
+	padding-left: 20px;
+}
+
+#home .reason {
+	width:100%;
+	max-width:630px;
+	margin:0 auto 100px;
+	background:url("../img/home/reason_foot.png") no-repeat bottom;
+	background-size:100%;
+	padding-bottom:6px;
+}
+#home .reason h4{
+	margin-bottom:0px;
+}
+#home .reason ol{
+	background:url("../img/home/reason_side.jpg") repeat-y;
+	background-size:100%;
+	list-style:none;
+	padding:15px;
+	margin:0 auto;
+}
+#home .reason ol li{
+	background:url("../img/home/reason_border.jpg") repeat-x bottom;
+	list-style:none;
+	padding-bottom:1em;
+	margin-bottom:1em;
+}
+#home .reason ol li img.image{
+	width:120px;
+	float:left;
+}
+	@media screen and (max-width: 769px) {
+		#home .reason ol li img.image{
+			width:120px;
+			float:none;
+			margin:0 auto;
+			display:block;
+		}
+	}
+#home .reason ol li img.ttl{
+	display:block;
+}
+
+#home .jyuryo-guide-box {
+	background-color: #f5f5f5;
+	padding: 20px;
+}
+
+#home .jyuryo-guide-text {
+	float: left;
+}
+
+#home .jyuryo-guide-image {
+	float: right;
+}
+
+#home h2 .phone-carousel-navigation {
+	text-align: center;
+}
+
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#home {
+		}
+
+		#home .main_image {
+			background: none;
+		}
+
+		#home h2 {
+			height: auto;
+			padding: 0;
+		}
+
+		#home h2 .carousel-navigation ul li:last-child {
+			padding-top: 0;
+		}
+
+		#home h2 .carousel-navigation ul li {
+			width: 100%;
+			float: none;
+		}
+
+		#home .recommend-cemetery-list {
+			margin-bottom: 40px;
+		}
+
+		#home .recommend-cemetery-list li {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
+		#home .recommend-cemetery-list li:last-child {
+			padding-top: 30px;
+			border-top: solid 1px #cccccc;
+			margin-bottom: 0;
+		}
+
+		#home .recommend-cemetery-list li img {
+			float: left;
+			width: 45%;
+			margin-right: 5%;
+		}
+
+		#home .recommend-guide-text {
+			display: inline-block;
+			float: right;
+			width: 45%;
+		}
+
+		#home .jyuryo-guide-text {
+			width: 40%;
+		}
+
+		#home .jyuryo-guide-image {
+			width: 50%;
+		}
+	}
+
+	/* -- >>> styles for wide layout ----- */
+	@media screen and (min-width: 770px) {
+		#home {
+		}
+	}
+
+
+/* [ news_list ]
+------------------------------ */
+
+.l-article .news_title {
+	font-size: 160%;
+	font-weight: bold;
+	padding-bottom: 0.2em;
+	margin-bottom: 0.5em;
+	letter-spacing: 0.08em;
+	border-bottom: 4px solid #66b92f;
+}
+.l-article .news_list dl {
+	clear: both;
+}
+.l-article .news_list dl dt {
+	width: 8.5em;
+	padding: 16px 0;
+	float: left;
+	font-size: 85%;
+	font-weight: bold;
+	background: url("../img/common/detail/ico_next.png") right center no-repeat;
+}
+.l-article .news_list dl dd {
+	padding: 14px 0 14px 8em;
+	border-bottom: 1px dotted #CCCCCC;
+}
+.l-article .news_list dl dd a {
+	color: #333333;
+}
+.l-article .news_list dl dd a:hover {
+	color: #999999;
+}
+.l-article .news_list dl span.new {
+	font-size: 60%;
+	color: #FFFFFF;
+	background: #FF3333;
+	padding: 2px 4px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	position: relative;
+	top: -2px;
+	margin-left: 0.75em;
+}
+.l-article .inner_box.news_list dl:first-child{
+	margin-top: -10px;
+}
+.l-article section.news_list h4  {
+	margin-bottom: 15px;
+}
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 639px) {
+		.l-article .news_list dl dt {
+			font-size: 75%;
+			width: 8.5em;
+		}
+		.l-article .news_list dl dd {
+			padding: 14px 0 14px 7em;
+		}
+		.l-article .news_list dl span.new {
+			font-size: 50%;
+			padding: 2px 4px 1px;
+			top: -2px;
+		}
+	}
+
+
+/* [ news_all ]
+------------------------------ */
+
+#home p.news_all {
+	text-align: right;
+	font-size: 90%;
+	position: relative;
+	margin-bottom: 4em;
+}
+#home .inner_box.news_list p.news_all {
+	bottom: -10px;
+}
+#home .l-article.short .news_list_short p.news_all {
+	top: 0px;
+}
+
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#home p.news_all {
+			text-align: center;
+			font-size: 100%;
+			position: relative;
+			width: 90%;
+			margin: 20px auto 4em;
+			bottom: 0;
+			top: 0;
+		}
+		#home p.news_all a{
+			display: block;
+			padding: 10px;
+			color: #FFFFFF;
+		}
+		#home .inner_box.news_list p.news_all a {
+			background: #66b92f;
+			border: 4px solid #94ce6e;
+		}
+	}
+
+
+
+/* キービジュアル */
+#home .main_image {
+	background-image: url("../img/common/detail/title.jpg");
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+	margin-bottom: 2.5em;
+}
+
+
+#home .image_list .bx-wrapper {
+	text-align: center;
+	margin: 2.5em auto 1.5em;
+	width: 98%;
+	max-width: 980px;
+}
+#home .image_list .bx-wrapper img {
+	width: 100%;
+}
+#home .image_list #bx-pager {
+	width: 98%;
+	max-width: 980px;
+	margin: 0 auto 2em;
+}
+#home .image_list #bx-pager a {
+	width: 24%;
+	float: left;
+	margin: 0 1% 0 0;
+}
+#home .image_list #bx-pager a:nth-child(even) {
+}
+#home .image_list .bx-controls {
+	display: none;
+}
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 480px) {
+		#home .image_list #bx-pager a,
+		#home .image_list #bx-pager a:nth-child(even) {
+			width: 90%;
+			float: none;
+		}
+		#home .image_list #bx-pager a img {
+			margin-bottom: 10px;
+		}
+	}
+	@media screen and (max-width: 769px) {
+		#home .main_image {
+			background: none;
+			box-shadow: none;
+			margin-bottom: 0;
+		}
+
+		#home .image_list .bx-wrapper {
+			margin: 0 auto 1em;
+			width: 100%;
+		}
+		#home .image_list #bx-pager {
+			margin: 0 auto 1.5em;
+			width: 95%;
+		}
+	}
+	/* -- >>> styles for middle layout ----- */
+	@media screen and (min-width: 980px) {
+		#home .image_list .bx-wrapper,
+		#home .image_list #bx-pager {
+			width: 100%;
+		}
+	}
+
+
+
+/** =2
+ * ========================================
+ * cemetery - 墓地・霊園
+ * ========================================
+ */
+
+#cemetery {
+}
+
+#cemetery .area-button-list {
+	text-align: center;
+}
+
+#cemetery .area-button-list li {
+	display: inline-block;
+	width: 22.5%;
+	margin: 0 0.5%;
+}
+#cemetery .area-button-list li a {
+	display: block;
+	text-align: center;
+	color: #FFF;
+	padding: 16px 0;
+	width: 100%;
+	font-size: 150%;
+	/* border-radius */
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+#cemetery .area-button-list li.cat1 a {
+	background: linear-gradient(#8e3c32, #5f1d21);
+}
+#cemetery .area-button-list li.cat2 a {
+	background: linear-gradient(#008935, #005c23);
+}
+#cemetery .area-button-list li.cat4 a {
+	background: linear-gradient(#86338d, #5a235f);
+}
+#cemetery .area-button-list li.cat3 a {
+	background: linear-gradient(#315098, #213666);
+}
+
+#cemetery .arrow-under {
+	display: block;
+	margin: 0 auto;
+}
+
+#cemetery .cemetery-text {
+	float: left;
+	padding-top: 10px;
+	width: 48%;
+}
+
+#cemetery .cemetery-box {
+	border-bottom: solid 1px #cccccc;
+}
+
+#cemetery .cemetery-box:last-child {
+	border-bottom: none;
+}
+
+#cemetery .cemetery-info {
+	margin-bottom: 30px;
+}
+
+#cemetery .cemetery-info p {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#cemetery .cemetery-info p:nth-child(odd) {
+	padding-top: 12px;
+}
+
+#cemetery .cemetery-photo {
+	max-width: 300px;
+	width: 48%;
+	float: left;
+	text-align: center;
+	margin-right: 4%;
+	padding-top: 10px;
+}
+#cemetery .cemetery-photo img {
+	width: 98%;
+	border: solid 2px #FFFFFF;
+	outline: solid 1px #e5e5e5;
+	margin-bottom: 0.5em;
+}
+
+#cemetery .cemetery-name {
+	margin-bottom: 8px;
+	padding-left: 10px;
+}
+
+#cemetery .area-bar {
+	padding-left: 30px;
+	padding-bottom: 10px;
+	background: linear-gradient(#ffffff, #f4f4f4);
+}
+
+#cemetery .icon {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 2px 0;
+	text-align: center;
+	min-width: 6em;
+	font-size: 85%;
+	/* border-radius */
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+
+#cemetery .cat1-bar {
+	border-bottom: solid 6px #8e3c32;
+}
+
+#cemetery .cat1-icon {
+	border: solid 1px #8e3c32;
+	color: #8e3c32;
+}
+
+#cemetery .cat1-info {
+	border-top: dotted 2px #8e3c32;
+}
+
+#cemetery .cat1-cemetery-name {
+	border-left: solid 8px #8e3c32;
+}
+
+
+#cemetery .cat2-icon {
+	border: solid 1px #008935;
+	color: #008935;
+}
+
+#cemetery .cat2-bar {
+	border-bottom: solid 6px #008935;
+}
+
+#cemetery .cat2-info {
+	border-top: dotted 2px #008935;
+}
+
+#cemetery .cat2-cemetery-name {
+	border-left: solid 8px #008935;
+}
+
+
+#cemetery .cat3-icon {
+	border: solid 1px #315098;
+	color: #315098;
+}
+
+#cemetery .cat3-bar {
+	border-bottom: solid 6px #315098;
+}
+
+#cemetery .cat3-info {
+	border-top: dotted 2px #315098;
+}
+
+#cemetery .cat3-cemetery-name {
+	border-left: solid 8px #315098;
+}
+
+
+#cemetery .cat4-icon {
+	border: solid 1px #86338d;
+	color: #86338d;
+}
+
+#cemetery .cat4-bar {
+	border-bottom: solid 6px #86338d;
+}
+
+#cemetery .cat4-info {
+	border-top: dotted 2px #86338d;
+}
+
+#cemetery .cat4-cemetery-name {
+	border-left: solid 8px #86338d;
+}
+
+	@media screen and (max-width: 639px) {
+		#cemetery {
+		}
+		#cemetery .area-button-list li {
+			width: 45%;
+			margin: 0 0.5% 10px;
+		}
+		#cemetery .cemetery-text,
+		#cemetery .cemetery-photo {
+			max-width: 100%;
+			width: 98%;
+			margin: 0 1%;
+		}
+	}
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#cemetery {
+		}
+		#cemetery .cemetery-name {
+			font-size: 150%;
+		}
+	}
+	/* -- >>> styles for wide layout ----- */
+	@media screen and (min-width: 770px) {
+		#cemetery {
+		}
+	}
+
+
+
+/* 詳細 */
+#cemetery .image_list .bx-wrapper {
+	text-align: center;
+	margin: 2em auto 2em;
+	width: 99%;
+	/* box-shadow */
+	box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-moz-box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-webkit-box-shadow: 0px 0px 6px 3px #e3e3e3;
+
+}
+#cemetery .image_list .bx-wrapper img {
+	width: 100%;
+}
+#cemetery .image_list #bx-pager {
+	width: 100%;
+	margin: 0 auto 3em;
+}
+#cemetery .image_list #bx-pager a {
+	width: 30%;
+	float: left;
+	margin: 0 1.5%;
+}
+#cemetery .image_list #bx-pager a img {
+	border: 1px solid #DEDEDE;
+	padding: 2px;
+}
+#cemetery .image_list .bx-controls {
+	display: none;
+}
+
+#cemetery dl.detail_box {
+	/* box-shadow */
+	box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-moz-box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-webkit-box-shadow: 0px 0px 6px 3px #e3e3e3;
+
+	/* border-radius */
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+
+	padding: 20px 20px;
+	margin-bottom: 2em;
+}
+#cemetery dl.detail_box dt {
+	color: #FFFFFF;
+	width: 7em;
+	padding: 0.2em;
+	margin: 0.8em 0 0.5em;
+	float: left;
+	text-align: center;
+	font-size: 90%;
+	/* border-radius */
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#cemetery #cat1 dl.detail_box dt {
+	background: #8e3c32;
+}
+#cemetery #cat2 dl.detail_box dt {
+	background: #008935;
+}
+#cemetery #cat3 dl.detail_box dt {
+	background: #86338d;
+}
+#cemetery #cat4 dl.detail_box dt {
+	background: #315098;
+}
+#cemetery dl.detail_box dd {
+	border-bottom: solid 1px #CCCCCC;
+	padding: 0.8em 0 0.8em 8em;
+}
+#cemetery dl.detail_box dd:last-child {
+	border-bottom: none;
+}
+	@media screen and (max-width: 639px) {
+		#cemetery .image_list .bx-wrapper {
+			margin: 2em auto 1em;
+		}
+		#cemetery .image_list #bx-pager {
+			margin: 0 auto 2em;
+		}
+		#cemetery dl.detail_box {
+			padding: 10px 15px;
+			margin-bottom: 2em;
+		}
+		#cemetery dl.detail_box dt {
+			float: none;
+			font-size: 80%;
+			margin: 0.5em 0 0;
+		}
+		#cemetery dl.detail_box dd {
+			padding: 0.5em 0;
+		}
+	}
+
+
+
+
+/** =3
+ * ========================================
+ * gravestone - 墓石の種類
+ * ========================================
+ */
+
+#gravestone {
+}
+
+#gravestone .stone-bar {
+	padding-left: 30px;
+	padding-bottom: 10px;
+	background: linear-gradient(#ffffff, #f4f4f4);
+	border-bottom: solid 6px #66b92f;
+}
+
+#gravestone .stone-guide {
+	padding-bottom: 30px;
+	border-bottom: solid 1px #cccccc;
+}
+
+#gravestone p small {
+	padding-left: 30px;
+}
+
+#gravestone .stone-list-title {
+	padding-left: 10px;
+	color: #003300;
+	line-height: 1.2;
+	margin-left: 15px;
+	border-left: solid 5px #66b92f;
+}
+
+#gravestone .stone-photo li {
+	width: 30%;
+	float: left;
+	margin: 0 1.5% 1em;
+	text-align: center;
+}
+
+#gravestone .stone-name {
+	color: #66b92f;
+	font-weight: bold;
+	display: block;
+}
+
+#gravestone .stone-accessories-cg {
+	display: block;
+	margin: 0 auto;
+}
+
+	/* -- >>> styles for phone layout ----- */
+	@media screen and (max-width: 639px) {
+		#gravestone .stone-list-title {
+			padding-left: 8px;
+			margin-left: 8px;
+		}
+		#gravestone p small {
+			padding-left: 20px;
+		}
+		#gravestone .stone-photo li {
+			width: 45%;
+			margin: 0 2.5% 1em;
+		}
+	}
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#gravestone {
+		}
+	}
+
+	/* -- >>> styles for wide layout ----- */
+	@media screen and (min-width: 770px) {
+		#gravestone {
+		}
+	}
+
+
+
+/** =4
+ * ========================================
+ * flow - お墓を建てるまで
+ * ========================================
+ */
+
+#flow {
+}
+
+#flow .flow-first {
+	padding-bottom: 30px;
+	background: url("../img/common/detail/leaf_line.png") bottom left no-repeat    ;
+}
+
+
+
+#flow .flow-start-list li {
+	text-align: center;
+	background-color: whitesmoke;
+	width: 47%;
+	float: left;
+	margin: 0 1.5%;
+	padding: 0 0 1.5em;
+}
+#flow .flow-start-list li span {
+	line-height: 1.4;
+	margin: 1em 0 0.5em;
+}
+#flow .flow-start-list li img {
+	width: 90%;
+	max-width: 250px;
+}
+	/* -- >>> styles for phone layout ----- */
+	@media screen and (max-width: 639px) {
+		#flow {
+		}
+		#flow .flow-start-list li {
+			float: none;
+			width: 95%;
+			margin: 10px 2.5%;
+		}
+		#flow .flow-start-list li span {
+			line-height: 1.4;
+			margin: 0 0 0.5em;
+			padding-top: 1em;
+			font-size: 95%;
+		}
+		#flow h4.list {
+			font-size: 110%;
+			letter-spacing: -0.05em;
+		}
+	}
+
+
+#flow h4.list {
+	margin-bottom: 1em;
+}
+#flow .flow-green-step,
+#flow .flow-blue-step {
+	color: #66b92f;
+	margin: -10px 0 10px;
+	font-size: 200%;
+	line-height: 1.4;
+}
+#flow .flow-blue-step {
+	color: #2a82b1;
+}
+
+#flow .flow-step-description {
+	padding-left: 40px;
+}
+
+#flow .flow-balloon-top {
+	background: url("../img/flow/balloon_top.png") bottom left no-repeat    ;
+	background-size: 100% auto;
+	height: 40px;
+}
+
+#flow .flow-balloon-middle {
+	background: url("../img/flow/balloon_middle.png") bottom left repeat-y    ;
+	background-size: 100% auto;
+	padding: 0 30px 0 40px;
+}
+
+#flow .flow-balloon-under {
+	background: url("../img/flow/balloon_under.png") top left no-repeat    ;
+	background-size: 100% auto;
+	height: 50px;
+}
+
+#flow .flow-balloon-arrow-under {
+	background: url("../img/flow/balloon_arrow_under.png") top left no-repeat    ;
+	background-size: 100% auto;
+	height: 50px;
+}
+
+#flow .flow-procedure-box {
+	margin: 10px 32px;
+	padding: 16px;
+	background-color: whitesmoke;
+}
+
+#flow .flow-procedure-list li {
+	color:#cc3333;
+	font-weight: bold;
+}
+
+	/* -- >>> styles for phone layout ----- */
+	@media screen and (max-width: 639px) {
+		#flow {
+		}
+		#flow .flow-balloon-middle {
+			padding: 0 10px 5px 20px;
+		}
+		#flow .flow-green-step,
+		#flow .flow-blue-step {
+			margin: 0 0 5px;
+			font-size: 145%;
+		}
+		#flow .flow-step-description {
+			padding: 0 0 10px;
+		}
+		#flow .flow-balloon-top {
+			margin-top: -10px;
+		}
+		#flow .flow-balloon-arrow-under {
+			background: url("../img/flow/balloon_arrow_under.png") bottom left no-repeat    ;
+			background-size: 100% auto;
+			height: 30px;
+			margin-top: -10px;
+		}
+		#flow .flow-procedure-box {
+			margin: 0 10px 10px 0;
+			padding: 10px;
+			font-size: 85%;
+		}
+	}
+
+
+
+/** =5
+ * ========================================
+ * maintenance - 墓石メンテナンス
+ * ========================================
+ */
+
+#maintenance {
+}
+
+#maintenance .maintenance-service-list {
+	/* box-shadow */
+	box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-moz-box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-webkit-box-shadow: 0px 0px 6px 3px #e3e3e3;
+
+	/* border-radius */
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+
+	padding: 5px 20px;
+}
+
+#maintenance .maintenance-service-list li {
+	font-size: 140%;
+	padding: 16px 0;
+	padding-bottom: 16px;
+	border-bottom: solid 1px #cccccc;
+	font-weight: bold;
+}
+
+#maintenance .maintenance-service-list li:last-child {
+	border-bottom: none;
+}
+
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#maintenance .maintenance-service-list {
+			padding: 0 10px;
+		}
+		#maintenance .maintenance-service-list li {
+			padding: 12px 0;
+			font-size: 120%;
+		}	}
+
+	/* -- >>> styles for wide layout ----- */
+	@media screen and (min-width: 770px) {
+		#maintenance {
+		}
+	}
+
+
+
+/** =6
+ * ========================================
+ * move - 改葬（お墓の引越）
+ * ========================================
+ */
+
+#move {
+}
+
+#move .move-header {
+	padding-bottom: 40px;
+	background: url("../img/common/detail/leaf_line.png") bottom left no-repeat    ;
+}
+
+#move .move-step-list {
+	padding: 20px;
+	/* border-bottom: solid 1px #cccccc;*/
+	max-width: 580px;
+	margin: 0 auto;
+	font-size: 200%;
+	line-height: 1.25;
+	background: url("../img/move/step_arrow.png") bottom center no-repeat    ;
+}
+#move .move-step-list:last-child {
+	background: none ;
+}
+
+#move .move-step-list dt {
+	padding: 20px;
+	float: left;
+	color: #66b92f;
+	font-weight: bold;
+	margin-right: -30px;
+}
+
+#move .move-step-list dd {
+	text-align: center;
+	font-weight: bold;
+	padding: 20px;
+	background-color: #e0f1d5;
+	/* border-radius */
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+#move .move-step-list dd.list_02,
+#move .move-step-list dd.list_03 {
+	font-size: 90%;
+}
+
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#move .move-step-list {
+			padding: 15px 5px;
+			font-size: 130%;
+		}
+		#move .move-step-list dt {
+			margin-left: -10px;
+		}
+		#move .move-step-list dd.list_02,
+		#move .move-step-list dd.list_03 {
+			font-size: 80%;
+			padding-left: 2em;
+		}
+	}
+
+	/* -- >>> styles for wide layout ----- */
+	@media screen and (min-width: 770px) {
+		#move {
+		}
+	}
+
+
+
+/** =7
+ * ========================================
+ * company - 会社案内
+ * ========================================
+ */
+
+#company {
+}
+/* [ table ]
+------------------------------ */
+
+#company .l-article table.table th {
+	background: #f0f8ea;
+	white-space: nowrap;
+	color: #006600;
+}
+#company .l-article table.table th,
+#company .l-article table.table td {
+	padding: 10px 10px;
+	border: 1px solid #CCCCCC;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#company .l-article table.table th,
+		#company .l-article table.table td {
+			padding: 5px 5px;
+		}
+	}
+
+
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#company {
+		}
+	}
+
+	/* -- >>> styles for wide layout ----- */
+	@media screen and (min-width: 770px) {
+		#company {
+		}
+	}
+
+
+
+/** =8
+ * ========================================
+ * jyuryo - ご生前建墓「寿陵」
+ * ========================================
+ */
+
+#jyuryo {
+}
+
+#jyuryo strong {
+	display: block;
+	text-align: center;
+	margin: 30px 0;
+	font-size: 130%;
+}
+
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#jyuryo strong {
+			font-size: 120%;
+			margin: 20px 0;
+		}
+	}
+
+	/* -- >>> styles for wide layout ----- */
+	@media screen and (min-width: 770px) {
+		#jyuryo {
+		}
+	}
+
+
+
+/** =9
+ * ========================================
+ * loan - お取り扱いローン
+ * ========================================
+ */
+
+#loan {
+}
+
+#loan strong {
+	display: block;
+	text-align: center;
+	color: #409608;
+}
+
+#loan small {
+	display: block;
+	text-align: center;
+}
+
+#loan .loan-example-table {
+	font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+	border-top: solid 1px #cccccc;
+	margin-top: 20px ;
+}
+
+#loan .loan-example-table dt {
+	background: url("../img/common/detail/loan_arrow.png") 5px center no-repeat    ;
+	float: left;
+	font-weight: bold;
+	width: 40%;
+	padding: 15px 15px 15px 20px;
+}
+
+#loan .loan-example-table dd {
+	padding: 15px 0;
+	border-bottom: solid 1px #cccccc;
+}
+
+#loan .loan-yamato-guide {
+	display: block;
+	margin: 20px auto;
+}
+
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#loan {
+		}
+		#loan .loan-example-table {
+			width: 100%;
+			padding-top: 6px;
+		}
+		#loan .loan-example-table dt {
+			width: auto;
+			float: none;
+			padding: 0 0 0 20px;
+		}
+		#loan .loan-example-table dd {
+			padding: 0 0 6px 20px;
+			margin-bottom: 6px;
+		}
+	}
+
+	/* -- >>> styles for wide layout ----- */
+	@media screen and (min-width: 770px) {
+		#loan {
+		}
+	}
+
+
+
+/** =10
+ * ========================================
+ * free-check - 無料点検
+ * ========================================
+ */
+
+#free-check {
+}
+
+#free-check .free-check-image {
+	display: block;
+	margin: 0 auto;
+}
+
+#free-check .free-check-service-list {
+	/* box-shadow */
+	box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-moz-box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-webkit-box-shadow: 0px 0px 6px 3px #e3e3e3;
+
+	/* border-radius */
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+
+	padding: 5px 20px;
+}
+
+#free-check .free-check-service-list li {
+	font-size: 140%;
+	padding: 16px 0;
+	border-bottom: solid 1px #cccccc;
+	font-weight: bold;
+}
+#free-check .free-check-service-list li:last-child {
+	border-bottom: none;
+}
+
+#free-check .checkbox {
+	background: url("../img/common/detail/checkbox.png") bottom left no-repeat    ;
+	padding-left: 35px;
+}
+
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#free-check .free-check-service-list {
+			padding: 0 10px;
+		}
+		#free-check .free-check-service-list li {
+			padding: 12px 0;
+			font-size: 120%;
+		}
+		#free-check .checkbox {
+			background-size: 20px 16px;
+			padding-left: 25px;
+		}
+	}
+
+	/* -- >>> styles for wide layout ----- */
+	@media screen and (min-width: 770px) {
+		#free-check {
+		}
+	}
+
+
+
+
+/** =11
+ * ========================================
+ * construction - 施工例
+ * ========================================
+ */
+
+#construction {
+}
+
+#construction {
+}
+
+#construction .area-button-list {
+	text-align: center;
+}
+
+#construction .area-button-list li {
+	display: inline-block;
+	width: 22.5%;
+	margin: 0 0.5%;
+}
+#construction .area-button-list li a {
+	display: block;
+	text-align: center;
+	color: #FFF;
+	padding: 16px 0;
+	width: 100%;
+	font-size: 150%;
+	/* border-radius */
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+#construction .area-button-list li.cat1 a {
+	background: linear-gradient(#8e3c32, #5f1d21);
+}
+#construction .area-button-list li.cat2 a {
+	background: linear-gradient(#008935, #005c23);
+}
+#construction .area-button-list li.cat4 a {
+	background: linear-gradient(#86338d, #5a235f);
+}
+#construction .area-button-list li.cat3 a {
+	background: linear-gradient(#315098, #213666);
+}
+
+#construction .arrow-under {
+	display: block;
+	margin: 0 auto;
+}
+
+#construction .construction-text {
+	float: left;
+	padding-top: 10px;
+	width: 48%;
+}
+
+#construction .construction-box {
+	border-bottom: solid 1px #cccccc;
+}
+
+#construction .construction-box:last-child {
+	border-bottom: none;
+}
+
+#construction .construction-info {
+	margin-bottom: 30px;
+}
+
+#construction .construction-info p {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#construction .construction-info p:nth-child(odd) {
+	padding-top: 12px;
+}
+
+#construction .construction-photo {
+	max-width: 300px;
+	width: 48%;
+	float: left;
+	text-align: center;
+	margin-right: 4%;
+	padding-top: 10px;
+}
+#construction .construction-photo img {
+	width: 98%;
+	border: solid 2px #FFFFFF;
+	outline: solid 1px #e5e5e5;
+	margin-bottom: 0.5em;
+}
+
+#construction .construction-name {
+	margin-bottom: 8px;
+	padding-left: 10px;
+}
+
+#construction .area-bar {
+	padding-left: 30px;
+	padding-bottom: 10px;
+	background: linear-gradient(#ffffff, #f4f4f4);
+}
+
+#construction .icon {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 2px 0;
+	text-align: center;
+	min-width: 6em;
+	font-size: 85%;
+	/* border-radius */
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+
+#construction .cat1-bar {
+	border-bottom: solid 6px #8e3c32;
+}
+
+#construction .cat1-icon {
+	border: solid 1px #8e3c32;
+	color: #8e3c32;
+}
+
+#construction .cat1-info {
+	border-top: dotted 2px #8e3c32;
+}
+
+#construction .cat1-construction-name {
+	border-left: solid 8px #8e3c32;
+}
+
+
+#construction .cat2-icon {
+	border: solid 1px #008935;
+	color: #008935;
+}
+
+#construction .cat2-bar {
+	border-bottom: solid 6px #008935;
+}
+
+#construction .cat2-info {
+	border-top: dotted 2px #008935;
+}
+
+#construction .cat2-construction-name {
+	border-left: solid 8px #008935;
+}
+
+
+#construction .cat3-icon {
+	border: solid 1px #315098;
+	color: #315098;
+}
+
+#construction .cat3-bar {
+	border-bottom: solid 6px #315098;
+}
+
+#construction .cat3-info {
+	border-top: dotted 2px #315098;
+}
+
+#construction .cat3-construction-name {
+	border-left: solid 8px #315098;
+}
+
+
+#construction .cat4-icon {
+	border: solid 1px #86338d;
+	color: #86338d;
+}
+
+#construction .cat4-bar {
+	border-bottom: solid 6px #86338d;
+}
+
+#construction .cat4-info {
+	border-top: dotted 2px #86338d;
+}
+
+#construction .cat4-construction-name {
+	border-left: solid 8px #86338d;
+}
+
+	@media screen and (max-width: 639px) {
+		#construction {
+		}
+		#construction .area-button-list li {
+			width: 45%;
+			margin: 0 0.5% 10px;
+		}
+		#construction .construction-text,
+		#construction .construction-photo {
+			max-width: 100%;
+			width: 98%;
+			margin: 0 1%;
+		}
+	}
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#construction {
+		}
+		#construction .construction-name {
+			font-size: 150%;
+		}
+	}
+	/* -- >>> styles for wide layout ----- */
+	@media screen and (min-width: 770px) {
+		#construction {
+		}
+	}
+
+
+
+/* 詳細 */
+#construction .image_list .bx-wrapper {
+	text-align: center;
+	margin: 2em auto 2em;
+	width: 99%;
+	/* box-shadow */
+	box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-moz-box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-webkit-box-shadow: 0px 0px 6px 3px #e3e3e3;
+
+}
+#construction .image_list .bx-wrapper img {
+	width: 100%;
+}
+#construction .image_list #bx-pager {
+	width: 100%;
+	margin: 0 auto 3em;
+}
+#construction .image_list #bx-pager a {
+
+	width: 30%;
+	float: left;
+	margin: 0 1.5%;
+}
+#construction .image_list #bx-pager a img {
+	border: 1px solid #DEDEDE;
+	padding: 2px;
+}
+#construction .image_list .bx-controls {
+	display: none;
+}
+
+#construction dl.detail_box {
+	/* box-shadow */
+	box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-moz-box-shadow: 0px 0px 6px 3px #e3e3e3;
+	-webkit-box-shadow: 0px 0px 6px 3px #e3e3e3;
+
+	/* border-radius */
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+
+	padding: 20px 20px;
+	margin-bottom: 2em;
+}
+#construction dl.detail_box dt {
+	color: #FFFFFF;
+	width: 7em;
+	padding: 0.2em;
+	margin: 0.8em 0 0.5em;
+	float: left;
+	text-align: center;
+	font-size: 90%;
+	/* border-radius */
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#construction #cat1 dl.detail_box dt {
+	background: #8e3c32;
+}
+#construction #cat2 dl.detail_box dt {
+	background: #008935;
+}
+#construction #cat3 dl.detail_box dt {
+	background: #86338d;
+}
+#construction #cat4 dl.detail_box dt {
+	background: #315098;
+}
+#construction dl.detail_box dd {
+	border-bottom: solid 1px #CCCCCC;
+	padding: 0.8em 0 0.8em 8em;
+}
+#construction dl.detail_box dd:last-child {
+	border-bottom: none;
+}
+	@media screen and (max-width: 639px) {
+		#construction .image_list .bx-wrapper {
+			margin: 2em auto 1em;
+		}
+		#construction .image_list #bx-pager {
+			margin: 0 auto 2em;
+		}
+		#construction dl.detail_box {
+			padding: 10px 15px;
+			margin-bottom: 2em;
+		}
+		#construction dl.detail_box dt {
+			float: none;
+			font-size: 80%;
+			margin: 0.5em 0 0;
+		}
+		#construction dl.detail_box dd {
+			padding: 0.5em 0;
+		}
+	}
+
+
+/** =12
+ * ========================================
+ * news - 新着情報
+ * ========================================
+ */
+
+#news.detail h4.list{
+	position: relative;
+}
+#news.detail h4.list span{
+	display:block;
+	position:absolute;
+	right:0;
+	bottom:-2em;
+	font-size:80%;
+}
+
+/* PDFダウンロード */
+#pdf{
+	padding-top:2em;
+	margin-bottom:2em;
+}
+#pdf p.pdf_download{
+	background:url("../img/common/pdf.jpg") no-repeat 5px 0px;
+	padding:0px 0px 0px 40px;
+	margin-bottom:10px;
+}
+#pdf blockquote{
+	border:1px solid #cccccc;
+	background-color:#efefef;
+	padding:1em;
+}
+#pdf blockquote img{
+	width:111px;
+	float:left;
+	margin-right:40px;
+}
+#pdf blockquote .adobe{
+	font-size:90%;
+}
+
+/** =13
+ * ========================================
+ * blog - ブログ
+ * ========================================
+ */
+
+#blog h4.list{
+	position: relative;
+}
+#blog h4.list span{
+	display:block;
+	position:absolute;
+	right:0;
+	bottom:-2em;
+	font-size:80%;
+}
+#blog .l-article .l-section{
+	padding-bottom:40px;
+	margin-bottom:60px;
+	border-bottom:1px solid #cccccc;
+}
+
+/** =14
+ * ========================================
+ * contact - お問い合わせ
+ * ========================================
+ */
+
+#contact {
+}
+/* [ table ]
+------------------------------ */
+
+#contact .l-article table.table{
+	margin-bottom:40px;
+}
+#contact .l-article table.table em {
+	color: #cc0000;
+}
+#contact .l-article table.table th {
+	background: #f0f8ea;
+	white-space: nowrap;
+	color: #006600;
+	vertical-align: middle;
+}
+#contact .l-article table.table th,
+#contact .l-article table.table td {
+	padding: 10px 10px;
+	border: 1px solid #CCCCCC;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#contact .l-article table.table input[size="3"],
+#contact .l-article table.table input[size="4"]{
+	width:4em;
+}
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#contact .l-article table.table th,
+		#contact .l-article table.table td {
+			padding: 5px 5px;
+			display:block;
+		}
+	}
+
+
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#contact {
+		}
+	}
+
+	/* -- >>> styles for wide layout ----- */
+	@media screen and (min-width: 770px) {
+		#contact {
+		}
+	}
+
+
+
+/** =14
+ * ========================================
+ * privacy- プライバシーポリシー
+ * ========================================
+ */
+
+#privacy {
+}
+/* [ table ]
+------------------------------ */
+
+#privacy .l-article dl{
+	padding:0 1em;
+}
+#privacy .l-article dl dt{
+	padding:0 1em;
+	border-bottom: solid 2px #66b92f;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+#privacy .l-article dl dd{
+	margin-bottom:40px;
+}
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#privacy {
+		}
+	}
+
+
+	/* -- >>> styles for narrow layout ----- */
+	@media screen and (max-width: 769px) {
+		#privacy {
+		}
+	}
+
+	/* -- >>> styles for wide layout ----- */
+	@media screen and (min-width: 770px) {
+		#privacy {
+		}
+	}
+
+
+

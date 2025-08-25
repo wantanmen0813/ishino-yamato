@@ -1,0 +1,589 @@
+@charset "utf-8";
+/* このファイルはUTF-8のBOMなし(UTF-8N)で保存しています */
+
+/**
+ * CSS Information
+ * ===============================================================
+ *
+ * Site URL:  http://
+ * File name: base.css
+ * Summary:   ベーススタイル
+ * Author:    CrEa Inc.
+ *
+ * -----------------------------------
+ *
+ * TOC:
+ *     =1    html & body
+ *     =2    box model styles
+ *       =2-1     margin
+ *       =2-2     padding
+ *       =2-3     box-sizing
+ *     =3    text styles
+ *     =4    img/video styles
+ *     =5    link styles
+ *     =6    list styles
+ *     =7    heading styles
+ *     =8    table styles
+ *     =9    other selectors
+ *     =10   general styles
+ *       =10-1    display
+ *       =10-2    position
+ *       =10-3    float/align
+ *       =10-4    form
+ *       =10-5    clearfix
+ *
+ * ===============================================================
+*/
+
+
+
+/** =0
+ * ========================================
+ * fontサブセット
+ * ========================================
+ */
+@font-face {
+	font-family: "hiragino6";
+	src: url("../fonts/hiragino6toubai.woff") format('woff');
+}
+ 
+ 
+/** =1
+ * ========================================
+ * html & body
+ * ========================================
+ */
+
+html {
+	height: 100%;
+	font-size: 62.5%;  /* 基準10px=1em */
+}
+
+body {
+	height: 100%;
+	color: #333333;
+	font-size: 14px;  /* CSS3未対応ブラウザ対策 */
+	font-size: 1.4rem;  /* CSS3単位 実質14px */
+	line-height: 1.6;
+	font-family:'Meiryo UI','メイリオ','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック',Verdana,sans-serif; /* その他 font-family については、 =3 text styles セクションでクラス名で定義 */
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/** =2
+ * ========================================
+ * box model styles
+ * ========================================
+ */
+
+	/** =2-1
+	 * margin
+	 * ----------------------------------
+	 */
+
+	.mb5 { margin-bottom: 5px; }
+	.mb10 { margin-bottom: 10px; }
+	.mb15 { margin-bottom: 15px; }
+	.mb20 { margin-bottom: 20px; }
+	.mb30 { margin-bottom: 30px; }
+	.mb40 { margin-bottom: 40px; }
+	.mb50 { margin-bottom: 50px; }
+	.mb60 { margin-bottom: 60px; }
+	.mb70 { margin-bottom: 70px; }
+	.mb80 { margin-bottom: 80px; }
+	.mb100 { margin-bottom: 100px; }
+	.mb120 { margin-bottom: 120px; }
+	.mb150 { margin-bottom: 150px; }
+
+	.mb05em { margin-bottom: .5em; }
+	.mb10em { margin-bottom: 1.0em; }
+	.mb15em { margin-bottom: 1.5em; }
+	.mb20em { margin-bottom: 2.0em; }
+
+
+	/** =2-2
+	 * padding
+	 * ----------------------------------
+	 */
+
+	.pt5 { padding-top: 5px; }
+	.pt10 { padding-top: 10px; }
+	.pt15 { padding-top: 15px; }
+	.pt20 { padding-top: 20px; }
+	.pt30 { padding-top: 30px; }
+	.pt40 { padding-top: 40px; }
+	.pt50 { padding-top: 50px; }
+	.pt60 { padding-top: 60px; }
+	.pt70 { padding-top: 70px; }
+	.pt80 { padding-top: 80px; }
+	.pt100 { padding-top: 100px; }
+	.pt120 { padding-top: 120px; }
+	.pt150 { padding-top: 150px; }
+
+	.pt05em { padding-top: .5em; }
+	.pt10em { padding-top: 1.0em; }
+	.pt15em { padding-top: 1.5em; }
+	.pt20em { padding-top: 2.0em; }
+
+
+	/** =2-3
+	 * box-sizing
+	 * ----------------------------------
+	 */
+
+	.boderBox {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+
+
+/** =3
+ * ========================================
+ * text styles
+ * ========================================
+ */
+
+strong,
+.strong,
+.fwBold {
+	font-weight: bold;
+}
+.fwNormal {
+	font-weight: normal;
+}
+
+.sans-serif {
+	font-family:'Meiryo UI','メイリオ','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック',Verdana,sans-serif;
+}
+.serif {
+	font-family: "hiragino6", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "游明朝", YuMincho, "HGS明朝E", serif;
+}
+
+.fcRed { color: #d95555; }
+.fcGreen { color: #59a529; }
+.fcBlue { color: #145096; }
+.fcWhite { color: #ffffff; }
+.fcBlack { color: #000000; }
+.fcGray { color: #808080; }
+
+.fs10 { font-size: 10px; font-size: 1.0rem; }
+.fs11 { font-size: 11px; font-size: 1.1rem; }
+.fs12 { font-size: 12px; font-size: 1.2rem; }
+.fs13 { font-size: 13px; font-size: 1.3rem; }
+.fs14 { font-size: 14px; font-size: 1.4rem; }
+.fs15 { font-size: 15px; font-size: 1.5rem; }
+.fs16 { font-size: 16px; font-size: 1.6rem; }
+.fs17 { font-size: 17px; font-size: 1.7rem; }
+.fs18 { font-size: 18px; font-size: 1.8rem; }
+.fs20 { font-size: 20px; font-size: 2.0rem; }
+.fs22 { font-size: 22px; font-size: 2.2rem; }
+.fs24 { font-size: 24px; font-size: 2.4rem; }
+.fs26 { font-size: 26px; font-size: 2.6rem; }
+.fs28 { font-size: 28px; font-size: 2.8rem; }
+.fs30 { font-size: 30px; font-size: 3.0rem; }
+.fs40 { font-size: 40px; font-size: 4.0rem; }
+.fs60 { font-size: 60px; font-size: 6.0rem; }
+
+.fs50per { font-size: 50%; }
+.fs60per { font-size: 60%; }
+.fs70per { font-size: 70%; }
+.fs80per { font-size: 80%; }
+.fs90per { font-size: 90%; }
+.fs110per { font-size: 110%; }
+.fs120per { font-size: 120%; }
+.fs130per { font-size: 130%; }
+.fs140per { font-size: 140%; }
+.fs150per { font-size: 150%; }
+.fs160per { font-size: 160%; }
+.fs180per { font-size: 180%; }
+.fs200per { font-size: 200%; }
+
+.lh10 { line-height: 1.0; }
+.lh12 { line-height: 1.2; }
+.lh14 { line-height: 1.4; }
+.lh16 { line-height: 1.6; }
+.lh18 { line-height: 1.8; }
+.lh20 { line-height: 2.0; }
+
+.ls05 { letter-spacing: .05em; }
+.ls10 { letter-spacing: .1em; }
+.ls20 { letter-spacing: .2em; }
+.ls-05 { letter-spacing: -.05em; }
+.ls-10 { letter-spacing: -.1em; }
+.ls-20 { letter-spacing: -.2em; }
+
+
+
+/** =4
+ * ========================================
+ * img/video styles
+ * ========================================
+ */
+
+img,
+video {
+	height: auto;
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
+.imageReplace {
+	/* スコットケラムメソッド */
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+
+/** =5
+ * ========================================
+ * link styles
+ * ========================================
+ */
+
+a, a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+	outline: none;
+}
+a {
+	color: #66b92f;
+}
+a:hover {
+	color: #94ce6e;
+}
+
+a.transition {
+	-moz-transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+a.alpha:hover {
+	filter: alpha(opacity=40);
+	-moz-opacity: 0.40;
+	opacity: 0.40;
+}
+a.underline {
+	text-decoration: underline;
+}
+
+
+
+/** =6
+ * ========================================
+ * list styles
+ * ========================================
+ */
+
+ul li {
+	list-style-type: none;
+}
+ol li {
+	list-style-type: decimal;
+}
+ul.disc,
+ol {
+	padding-left: 1.2em;
+}
+ul.disc li {
+	list-style-type: disc;
+}
+
+
+
+/** =7
+ * ========================================
+ * heading styles
+ * ========================================
+ */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+h2 {
+    display: table-cell;
+    font-size: 220%;
+    font-weight: normal;
+    height: 200px;
+    padding: 0 25px;
+    text-shadow: 1px 2px 0px #ffffff;
+    vertical-align: middle;
+}
+	/* -- >>> styles for phone layout ----- */
+	@media screen and (max-width: 640px) {
+		h2 {
+			font-size: 150%;
+			height: 120px;
+			padding: 0 15px;
+		}
+	}
+
+
+h3 {
+    font-size: 200%;
+	background-image: url("../img/common/detail/title_back.png") ;
+	background-position: bottom center ;
+	background-repeat: no-repeat ;
+    background-size: 100% auto;
+	padding: 0.5em 0 2.5em;
+	letter-spacing: 0.08em;
+}
+	/* -- >>> styles for phone layout ----- */
+	@media screen and (max-width: 639px) {
+		h3 {
+		    font-size: 140%;
+			padding: 0.5em 0 2em;
+		}
+	}
+			/* -- >>> styles for narrow layout ----- */
+			@media screen and (min-width: 640px) and (max-width: 769px) {
+		h3 {
+		    font-size: 160%;
+			padding: 0.5em 0 2.5em;
+		}
+	}
+
+
+h4.list {
+	font-size: 140%;
+	margin-bottom: 1.8em;
+	padding: 0.4em 0 0.4em 2em;
+	letter-spacing: 0.05em;
+}
+h4.list.lightgreen {
+	background: url("../img/common/detail/clover_lightgreen.png") ,linear-gradient(#ffffff, #f4f4f4);
+	background-repeat: no-repeat;
+	background-position: 2% center;
+	border-bottom: solid 5px #66b92f;
+}
+h4.list.lightblue {
+	background: url("../img/common/detail/clover_lightblue.png") ,linear-gradient(#ffffff, #f4f4f4);
+	background-repeat: no-repeat;
+	background-position: 2% center;
+	border-bottom: solid 5px #2A82B1;
+}
+h4.list.cat1 {
+	background: url("../img/common/detail/clover_brown.png") ,linear-gradient(#ffffff, #f4f4f4);
+	background-repeat: no-repeat;
+	background-position: 2% center;
+	border-bottom: solid 5px #8E3C32;
+}
+h4.list.cat2 {
+	background: url("../img/common/detail/clover_green.png") ,linear-gradient(#ffffff, #f4f4f4);
+	background-repeat: no-repeat;
+	background-position: 2% center;
+	border-bottom: solid 5px #008935;
+}
+h4.list.cat3 {
+	background: url("../img/common/detail/clover_blue.png") ,linear-gradient(#ffffff, #f4f4f4);
+	background-repeat: no-repeat;
+	background-position: 2% center;
+	border-bottom: solid 5px #315098;
+}
+h4.list.cat4 {
+	background: url("../img/common/detail/clover_purple.png") ,linear-gradient(#ffffff, #f4f4f4);
+	background-repeat: no-repeat;
+	background-position: 2% center;
+	border-bottom: solid 5px #86338D;
+}
+	/* -- >>> styles for phone layout ----- */
+	@media screen and (max-width: 769px) {
+		h4.list {
+			font-size: 115%;
+			margin-bottom: 1.5em;
+		}
+	}
+
+
+/** =8
+ * ========================================
+ * table styles
+ * ========================================
+ */
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	font-weight: bold;
+}
+
+
+
+/** =9
+ * ========================================
+ * other selectors
+ * ========================================
+ */
+
+hr {
+	clear: both;
+}
+hr.dot {
+	border-top: 1px #999 dotted;
+}
+
+
+
+/** =10
+ * ========================================
+ * general styles
+ * ========================================
+ */
+
+	/** =10-1
+	 * display
+	 * ----------------------------------
+	 */
+
+	.displayInlineBlock {
+		display: inline-block;
+	}
+	.displayInline {
+		display: inline;
+	}
+	.displayBlock {
+		display: block;
+	}
+	.displayNone {
+		display: none;
+	}
+
+		/* -- >>> styles for narrow layout ----- */
+		@media screen and (max-width: 769px) {
+			.displayPc {
+				display: none;
+			}
+			.displaySp {
+				display: inherit;
+			}
+		}
+
+		/* -- >>> styles for wide layout ----- */
+		@media screen and (min-width: 770px) {
+			.displayPc {
+				display: inherit;
+			}
+			.displaySp {
+				display: none;
+			}
+		}
+
+
+	/** =10-2
+	 * position
+	 * ----------------------------------
+	 */
+
+	.posRelative {
+		position: relative;
+	}
+	.posAbsolute {
+		position: absolute;
+	}
+	.posFixed {
+		position: fixed;
+	}
+	.posStatic {
+		position: static;
+	}
+
+
+	/** =10-3
+	 * float/align
+	 * ----------------------------------
+	 */
+
+	.floatLeft {
+		float: left;
+	}
+	.floatRight {
+		float: right;
+	}
+
+	.clearLeft {
+		clear: left;
+	}
+	.clearRight {
+		clear: right;
+	}
+	.clearBoth {
+		clear: both;
+	}
+
+	.txtLeft {
+		text-align: left;
+	}
+	.txtCenter {
+		text-align: center;
+	}
+	.txtRight {
+		text-align: right;
+	}
+
+	.verticalTop {
+		vertical-align: top;
+	}
+	.verticalMiddle {
+		vertical-align: middle;
+	}
+	.verticalBottom {
+		vertical-align: bottom;
+	}
+
+
+	/** =10-4
+	 * form
+	 * ----------------------------------
+	 */
+
+	.btn {
+		cursor: pointer;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="url"],
+	input[type="search"],
+	input.txt,
+	textarea {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+
+	/** =10-5
+	 * clearfix
+	 * ----------------------------------
+	 */
+
+	/* For modern browsers */
+	.clearfix:before,
+	.clearfix:after,
+	.cf:before,
+	.cf:after {
+		display: table;
+		content: "";
+	}
+
+	.clearfix:after,
+	.cf:after {
+		clear: both;
+	}
+
+	/* For IE 6/7 (trigger hasLayout) */
+	.clearfix,
+	.cf {
+		zoom: 1;
+	}
